@@ -2,20 +2,20 @@
 
 > A modern and responsive full stack task manager with real-time updates, progress tracking, and persistent storage.
 
-TodoAI is a complete full stack web application designed to help users manage their daily tasks efficiently. It integrates a clean frontend interface with a powerful backend and MongoDB database to deliver a smooth and interactive experience.
+TodoAI is a complete full stack web application designed to help users manage daily tasks efficiently. It combines a clean frontend with a powerful backend and MongoDB database to deliver a smooth and interactive experience.
 
-
+---
 
 ## 🌟 What makes it special?
 
-* Seamless Full Stack Integration – Smooth communication between frontend and backend
-* Persistent Data Storage – Tasks are stored in MongoDB and remain after refresh
-* Modern UI Design – Clean, minimal, and responsive layout
-* Progress Tracking System – Visual indicator of completed tasks
-* Dark Mode Support – Enhanced user experience
-* Instant Updates – Real-time UI updates without page reload
+* Full Stack Integration – Seamless communication between frontend and backend
+* Persistent Storage – Tasks stored in MongoDB (no data loss on refresh)
+* Interactive UI – Clean, minimal, and responsive design
+* Progress Tracking – Visual completion indicator
+* Dark Mode Support – Improved user experience
+* Real-time Updates – Instant UI updates without reload
 
-
+---
 
 ## 🖥 System Overview & Screenshots
 
@@ -25,7 +25,7 @@ TodoAI is a complete full stack web application designed to help users manage th
 | ------------------------------------ | ---------------------------------- |
 | ![Light Mode](Screenshots/Light.png) | ![Dark Mode](Screenshots/Dark.png) |
 
-
+---
 
 ### ⚙️ Working Application
 
@@ -33,7 +33,7 @@ TodoAI is a complete full stack web application designed to help users manage th
 | ----------------------------------- |
 | ![Working](Screenshots/Working.png) |
 
-
+---
 
 ## 📂 Project Structure
 
@@ -56,7 +56,7 @@ Todo-App/
 │
 └── README.md
 
-
+---
 
 ## 🛠 Tech Stack
 
@@ -79,34 +79,35 @@ Todo-App/
 
 * REST API (Client-Server Model)
 
-
+---
 
 ## 🔬 System Working
 
 ### 📌 Core Functionalities
 
-* Add Task → Store task in database
-* View Tasks → Fetch tasks from backend
-* Complete Task → Update completion status
-* Delete Task → Remove task permanently
+* Add Task → Store in database
+* View Tasks → Fetch from backend
+* Complete Task → Toggle status
+* Delete Task → Remove permanently
 
-
+---
 
 ### 🔄 Data Flow
 
 Frontend → Express API → MongoDB → Express API → Frontend
 
+---
 
 ## 🚀 Features
 
 * Add tasks instantly
-* Delete tasks with animation
+* Delete tasks easily
 * Mark tasks as completed
-* Visual progress bar
+* Progress bar tracking
 * Clean and responsive UI
 * Dark / Light mode toggle
 
-
+---
 
 ## 📥 Installation & Setup
 
@@ -115,7 +116,7 @@ Frontend → Express API → MongoDB → Express API → Frontend
 git clone https://github.com/hu17-m/ToDo-FullStack-.git
 cd ToDo-FullStack-
 
-
+---
 
 ### 2️⃣ Backend Setup
 
@@ -127,16 +128,17 @@ Server will run at:
 
 http://localhost:5000
 
+---
 
 ### 3️⃣ Frontend Setup
 
-Open the following file in your browser:
+Open:
 
 frontend/index.html
 
-OR use Live Server (VS Code)
+Or use Live Server (VS Code)
 
-
+---
 
 ## 🔗 API Endpoints
 
@@ -147,7 +149,7 @@ OR use Live Server (VS Code)
 | PUT    | /todos/:id | Toggle completion |
 | DELETE | /todos/:id | Delete task       |
 
-
+---
 
 ## 👨‍💻 Developed By
 
@@ -157,7 +159,7 @@ Final Year B.Tech CSE (2026)
 🔗 GitHub: https://github.com/hu17-m
 🔗 Project Repo: https://github.com/hu17-m/ToDo-FullStack-
 
-
+---
 
 ## 🎯 Future Enhancements
 
@@ -167,13 +169,13 @@ Final Year B.Tech CSE (2026)
 * [ ] Cloud Deployment (Render / Vercel)
 * [ ] React Frontend Upgrade
 
-
+---
 
 ## 📌 Conclusion
 
-This project demonstrates a complete full stack CRUD application with frontend-backend integration, database persistence, and a modern user interface. It serves as a strong foundation for real-world applications and technical interviews.
+This project demonstrates a complete full stack CRUD application with frontend-backend integration, database persistence, and a modern UI. It is suitable for academic submission and portfolio use.
 
-
+---
 
 GitHub (https://github.com/hu17-m)
 hu17-m - Overview
