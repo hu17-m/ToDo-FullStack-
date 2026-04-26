@@ -1,121 +1,144 @@
-📝 TodoAI: Full Stack Todo Application
+# 📝 TodoAI: Full Stack Todo Application
 
-> A modern task management system with real-time updates, progress tracking, and persistent storage.
+> A modern and responsive full stack task manager with real-time updates, progress tracking, and persistent storage.
 
-TodoAI is a **full stack web application** that allows users to efficiently manage daily tasks with a clean UI and powerful backend. It integrates frontend, backend, and database to provide a seamless experience with real-time updates and data persistence.
-
-
- 🌟 What makes it special?
-
-* **Full Stack Integration:** Seamless communication between frontend (HTML/CSS/JS) and backend (Node.js + Express)
-* **Persistent Storage:** Tasks are stored in MongoDB and remain even after refresh
-* **Interactive UI:** Includes progress bar, animations, and dark mode
-* **Real-time Updates:** Changes reflect instantly without page reload
-* **User-Friendly Design:** Clean, minimal, and responsive layout
-
-
-🖥 System Overview & Visualizations
-
- Primary Interface
-
-|                    Light Mode                   |                   Dark Mode                   |
-| :---------------------------------------------: | :-------------------------------------------: |
-| ![Light Mode](Screenshots/Light%20Mode%201.png) | ![Dark Mode](Screenshots/Dark%20mode%201.png) |
-
- Application in Action
-
-|           Working Application           |
-| :-------------------------------------: |
-| ![Working](Screenshots/Working%201.png) |
-
-🔗 **View Repository:**
-https://github.com/hu17-m/ToDo-FullStack-
+TodoAI is a complete full stack web application designed to help users manage their daily tasks efficiently. It integrates a clean frontend interface with a powerful backend and MongoDB database to deliver a smooth and interactive experience.
 
 
 
-📂 Project Structure
+## 🌟 What makes it special?
 
-```text
+* Seamless Full Stack Integration – Smooth communication between frontend and backend
+* Persistent Data Storage – Tasks are stored in MongoDB and remain after refresh
+* Modern UI Design – Clean, minimal, and responsive layout
+* Progress Tracking System – Visual indicator of completed tasks
+* Dark Mode Support – Enhanced user experience
+* Instant Updates – Real-time UI updates without page reload
+
+
+
+## 🖥 System Overview & Screenshots
+
+### 🎨 User Interface
+
+| Light Mode                           | Dark Mode                          |
+| ------------------------------------ | ---------------------------------- |
+| ![Light Mode](Screenshots/Light.png) | ![Dark Mode](Screenshots/Dark.png) |
+
+
+
+### ⚙️ Working Application
+
+| Application Preview                 |
+| ----------------------------------- |
+| ![Working](Screenshots/Working.png) |
+
+
+
+## 📂 Project Structure
+
 Todo-App/
-├── backend/                # Node.js + Express backend
-│   ├── server.js           # API & database connection
-│   ├── package.json        # Dependencies
+├── backend/                # Backend (Node.js + Express)
+│   ├── node_modules/
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── server.js           # API routes and DB connection
 │
-├── frontend/               # UI Layer
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
+├── frontend/               # Frontend (HTML, CSS, JS)
+│   ├── index.html          # UI structure
+│   ├── style.css           # Styling (light + dark mode)
+│   ├── script.js           # Logic & API integration
 │
-├── Screenshots/            # UI Images
-│   ├── Light Mode 1.png
-│   ├── Dark mode 1.png
-│   ├── Working 1.png
+├── Screenshots/            # Screenshots used in README
+│   ├── Light.png
+│   ├── Dark.png
+│   ├── Working.png
 │
 └── README.md
 
 
 
+## 🛠 Tech Stack
 
-🛠 Tech Stack & Architecture
+### 🔹 Frontend
 
-Core Components
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
 
-* **Frontend:** HTML, CSS, JavaScript
-* **Backend:** Node.js, Express.js
-* **Database:** MongoDB (Mongoose)
-* **Architecture:** REST API-based client-server model
+### 🔹 Backend
+
+* Node.js
+* Express.js
+
+### 🔹 Database
+
+* MongoDB (Mongoose)
+
+### 🔹 Architecture
+
+* REST API (Client-Server Model)
 
 
-🔬 System Working
 
- CRUD Operations (Core Logic)
+## 🔬 System Working
 
-* **Create:** Add new tasks
-* **Read:** Fetch all tasks from MongoDB
-* **Update:** Toggle task completion
-* **Delete:** Remove tasks
+### 📌 Core Functionalities
 
- Data Flow
+* Add Task → Store task in database
+* View Tasks → Fetch tasks from backend
+* Complete Task → Update completion status
+* Delete Task → Remove task permanently
 
-Frontend → API (Express) → MongoDB → API → Frontend
 
-🚀 Key Functionalities
 
-* Add new tasks instantly
+### 🔄 Data Flow
+
+Frontend → Express API → MongoDB → Express API → Frontend
+
+
+## 🚀 Features
+
+* Add tasks instantly
 * Delete tasks with animation
 * Mark tasks as completed
-* Visual progress tracking
-* Dark mode support
-* Responsive UI
+* Visual progress bar
+* Clean and responsive UI
+* Dark / Light mode toggle
 
 
 
-📥 Installation & Usage
+## 📥 Installation & Setup
 
-1️⃣ Clone Repository
+### 1️⃣ Clone Repository
 
-bash
 git clone https://github.com/hu17-m/ToDo-FullStack-.git
+cd ToDo-FullStack-
 
 
 
- 2️⃣ Backend Setup
-bash
+### 2️⃣ Backend Setup
+
 cd backend
 npm install
 node server.js
 
- 3️⃣ Frontend Setup
+Server will run at:
 
-Open:
+http://localhost:5000
 
-bash
+
+### 3️⃣ Frontend Setup
+
+Open the following file in your browser:
+
 frontend/index.html
 
+OR use Live Server (VS Code)
 
-or use Live Server
 
- 🔗 API Endpoints
+
+## 🔗 API Endpoints
 
 | Method | Endpoint   | Description       |
 | ------ | ---------- | ----------------- |
@@ -124,23 +147,34 @@ or use Live Server
 | PUT    | /todos/:id | Toggle completion |
 | DELETE | /todos/:id | Delete task       |
 
- 👨‍💻 Developed By
+
+
+## 👨‍💻 Developed By
 
 Himanshu Gadekar
 Final Year B.Tech CSE (2026)
 
 🔗 GitHub: https://github.com/hu17-m
-🔗 Project: https://github.com/hu17-m/ToDo-FullStack-
+🔗 Project Repo: https://github.com/hu17-m/ToDo-FullStack-
 
- 🎯 Future Enhancements
+
+
+## 🎯 Future Enhancements
 
 * [ ] User Authentication (Login/Signup)
 * [ ] Edit Task Feature
-* [ ] Cloud Deployment (Render/Vercel)
+* [ ] Task Deadlines & Reminders
+* [ ] Cloud Deployment (Render / Vercel)
 * [ ] React Frontend Upgrade
 
- 📌 Conclusion
-
-This project demonstrates a complete **Full Stack CRUD Application** with modern UI design, backend integration, and database persistence—making it a strong foundation for real-world applications and interviews.
 
 
+## 📌 Conclusion
+
+This project demonstrates a complete full stack CRUD application with frontend-backend integration, database persistence, and a modern user interface. It serves as a strong foundation for real-world applications and technical interviews.
+
+
+
+GitHub (https://github.com/hu17-m)
+hu17-m - Overview
+hu17-m has 7 repositories available. Follow their code on GitHub.
