@@ -42,14 +42,14 @@ Todo-App/
 │   ├── node_modules/
 │   ├── package.json
 │   ├── package-lock.json
-│   ├── server.js           # API routes and DB connection
+│   ├── server.js
 │
 ├── frontend/               # Frontend (HTML, CSS, JS)
-│   ├── index.html          # UI structure
-│   ├── style.css           # Styling (light + dark mode)
-│   ├── script.js           # Logic & API integration
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
 │
-├── Screenshots/            # Screenshots used in README
+├── Screenshots/            # Project screenshots
 │   ├── Light.png
 │   ├── Dark.png
 │   ├── Working.png
