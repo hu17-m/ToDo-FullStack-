@@ -1,0 +1,267 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #2d3748;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  width: 100%;
+  max-width: 540px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.footer {
+  margin-top: 16px;
+  text-align: center;
+  color: #a0aec0;
+  font-size: 0.85rem;
+}
+
+/* ---------- Form ---------- */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.todo-input:focus {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.btn-add {
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 18px rgba(99, 102, 241, 0.35);
+}
+
+/* ---------- Progress Bar ---------- */
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* ---------- List ---------- */
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #f9fafb;
+  border: 1px solid #edf2f7;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  animation: fadeIn 0.3s ease;
+}
+
+.todo-item:hover {
+  background: #ffffff;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #6366f1;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #a0aec0;
+}
+
+.btn-delete {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #fee2e2;
+}
+
+/* ---------- Dark Mode (FIXED + IMPROVED) ---------- */
+body.dark {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e2e8f0;
+}
+
+/* Card */
+body.dark .card {
+  background: #1e293b;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+body.dark .header h1 {
+  color: #e2e8f0;
+}
+
+body.dark .subtitle {
+  color: #94a3b8;
+}
+
+/* Input */
+body.dark .todo-input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+}
+
+body.dark .todo-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Todo items */
+body.dark .todo-item {
+  background: #334155;
+  border: 1px solid #475569;
+}
+
+body.dark .todo-item:hover {
+  background: #475569;
+}
+
+/* Text */
+body.dark .todo-text {
+  color: #e2e8f0;
+}
+
+body.dark .todo-item.completed .todo-text {
+  color: #94a3b8;
+}
+
+/* Delete */
+body.dark .btn-delete {
+  color: #f87171;
+}
+
+body.dark .btn-delete:hover {
+  background: rgba(248, 113, 113, 0.15);
+}
+
+/* Progress */
+body.dark .progress-bar {
+  background: #334155;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .btn-add {
+    padding: 12px;
+  }
+}
